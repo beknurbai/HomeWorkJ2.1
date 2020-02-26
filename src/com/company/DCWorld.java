@@ -9,12 +9,11 @@ public class DCWorld {
         return superHeroesName;
     }
 
-    public DCWorld(String superHeroesName) {
-        this.superHeroesName = superHeroesName;
-    }
+
+
 
     public DCWorld(String superHeroesName, int speed) {
-
+this.superHeroesName=superHeroesName;
         this.speed = speed;
     }
 

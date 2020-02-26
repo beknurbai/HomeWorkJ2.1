@@ -14,7 +14,7 @@ public final class Cripton extends Superman {
     }
 
     public Cripton(String superAbilities, Weapon weapon,Planets planets, String SuperHeroesName,int speed ) {
-        super(superAbilities, weapon,SuperHeroesName,speed );
+        super(superAbilities, weapon,speed,SuperHeroesName );
 this.planets=planets;
 
     }

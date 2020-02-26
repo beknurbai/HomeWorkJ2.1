@@ -28,7 +28,7 @@ Been been=new Been(Planets.CRIPTON);
         return weapon;
     }
 
-    public Superman(String superAbilities, Weapon weapon,String SuperHeroesName,int speed ) {
+    public Superman(String superAbilities, Weapon weapon,int speed ,String SuperHeroesName) {
         super(SuperHeroesName,speed);
         SuperAbilities = superAbilities;
         this.weapon = weapon;
@@ -47,7 +47,7 @@ Been been=new Been(Planets.CRIPTON);
 
     public String  getInfo() {
        // System.out.println(getInfo());
-        return "Info "+" "+super.getSuperHeroesName()+" "+super.getSpeed()+" " + weapon+" " + SuperAbilities + " "+ vulnerability+" "+been.getPlanets();
+        return "Info "+" "+super.getSuperHeroesName()+" "+super.getSpeed()+" " + weapon+" " + SuperAbilities +" "+been.getPlanets();
     }
 
 

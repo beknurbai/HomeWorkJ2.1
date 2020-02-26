@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Superman superman1 = new Superman("Criptinitis", Weapon.SCORCHINGEYES,"Cont",400);
+        Superman superman1 = new Superman("Criptinitis", Weapon.SCORCHINGEYES,400,"Cont");
         superman1.getInfo();
         System.out.println(superman1.getInfo());
         Cripton cripton = new Cripton("Fly", Weapon.SCORCHINGEYES,Planets.EARTH,"lex",1000);
