@@ -9,6 +9,7 @@ public class Superman extends DCWorld {
 
 
     public Superman(String vulnerability) {
+        super("Superman",1000);
 
         this.vulnerability = vulnerability
         ;
@@ -17,31 +18,41 @@ public class Superman extends DCWorld {
     private String SuperAbilities;
     private Weapon weapon;
 
+
     public String getSuperAbilities() {
         return SuperAbilities;
     }
 
     public Weapon getWeapon() {
-        weapon = Weapon.SCORCHINGEYES;
-        weapon = Weapon.FLY;
+
         return weapon;
     }
 
     public Superman(String superAbilities, Weapon weapon) {
+        super("Superman",400);
         SuperAbilities = superAbilities;
         this.weapon = weapon;
     }
+    public void makeLaser(String eyeLaser){
+        System.out.println(eyeLaser);
+
+    }
+    public final void makeLaser(int eye){
+        for (int i = 0; i <eye ; i++) {
+            System.out.println("лазер из глаза"+i);
+        }
+    }
 
 
-    public String getInfo(String name) {
-        System.out.println("Info " + weapon + SuperAbilities + vulnerability);
-        return name;
+
+    public String  getInfo() {
+
+        return "Info " + weapon + SuperAbilities + vulnerability;
 
     }
 
-    final public void getInfo() {
-        System.out.println("Info " + weapon + SuperAbilities + vulnerability);
+
 
 
     }
-}
+

@@ -8,15 +8,15 @@ public class Main {
         System.out.println(superman1);
         superman1.getInfo();
 
-        Cripton cripton = new Cripton("Fly", Weapon.SCORCHINGEYES);
+        Cripton cripton = new Cripton("Fly", Weapon.SCORCHINGEYES,Planets.EARTH);
         System.out.println(cripton);
         cripton.getInfo();
 
-        Cripton cripton1 = new Cripton("SCORCHINGEYES", Weapon.FLY);
+        Cripton cripton1 = new Cripton("SCORCHINGEYES", Weapon.FLY,Planets.CRIPTON);
         System.out.println(cripton1);
         cripton1.getInfo();
 
-        Cripton cripton3 = new Cripton(" ", Weapon.FLY);
+        Cripton cripton3 = new Cripton(" ", Weapon.FLY,Planets.JUPITER);
 cripton3.getInfo2();
     }
 }

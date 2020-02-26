@@ -9,7 +9,10 @@ public class DCWorld {
         return superHeroesName;
     }
 
+    public DCWorld(String superHeroesName, int speed) {
 
+        this.speed = speed;
+    }
 
     public int getSpeed() {
         return speed;
