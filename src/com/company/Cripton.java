@@ -13,8 +13,8 @@ public final class Cripton extends Superman {
         return immunity;
     }
 
-    public Cripton(String superAbilities, Weapon weapon,Planets planets) {
-        super(superAbilities, weapon);
+    public Cripton(String superAbilities, Weapon weapon,Planets planets, String SuperHeroesName,int speed ) {
+        super(superAbilities, weapon,SuperHeroesName,speed );
 this.planets=planets;
 
     }
@@ -24,11 +24,7 @@ this.planets=planets;
         return super.getInfo();
     }
 
-    public void getInfo2() {
-        Superman superman = new Superman("", Weapon.SCORCHINGEYES);
-        this.abc = superman.getSuperAbilities();
-        this.immunity = superman.getVulnerability();
+
     }
 
-}
 

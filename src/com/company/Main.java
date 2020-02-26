@@ -4,19 +4,18 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Superman superman1 = new Superman("Criptinitis", Weapon.SCORCHINGEYES);
-        System.out.println(superman1);
+        Superman superman1 = new Superman("Criptinitis", Weapon.SCORCHINGEYES,"Cont",400);
         superman1.getInfo();
-
-        Cripton cripton = new Cripton("Fly", Weapon.SCORCHINGEYES,Planets.EARTH);
-        System.out.println(cripton);
+        System.out.println(superman1.getInfo());
+        Cripton cripton = new Cripton("Fly", Weapon.SCORCHINGEYES,Planets.EARTH,"lex",1000);
+        System.out.println(cripton.getInfo());
         cripton.getInfo();
 
-        Cripton cripton1 = new Cripton("SCORCHINGEYES", Weapon.FLY,Planets.CRIPTON);
-        System.out.println(cripton1);
+        Cripton cripton1 = new Cripton("SCORCHINGEYES", Weapon.FLY,Planets.CRIPTON,"Zod",1000);
+        System.out.println(cripton1.getInfo());
         cripton1.getInfo();
 
-        Cripton cripton3 = new Cripton(" ", Weapon.FLY,Planets.JUPITER);
-cripton3.getInfo2();
+        Cripton cripton3 = new Cripton(" ", Weapon.FLY,Planets.JUPITER,"Caluel",1500);
+cripton3.getInfo();
     }
 }

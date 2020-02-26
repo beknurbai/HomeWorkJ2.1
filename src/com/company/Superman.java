@@ -8,7 +8,7 @@ public class Superman extends DCWorld {
     private String vulnerability;
 
 
-    public Superman(String vulnerability) {
+    public Superman(String vulnerability, Weapon scorchingeyes, Been earth) {
         super("Superman",1000);
 
         this.vulnerability = vulnerability
@@ -17,7 +17,7 @@ public class Superman extends DCWorld {
 
     private String SuperAbilities;
     private Weapon weapon;
-
+Been been=new Been(Planets.CRIPTON);
 
     public String getSuperAbilities() {
         return SuperAbilities;
@@ -28,8 +28,8 @@ public class Superman extends DCWorld {
         return weapon;
     }
 
-    public Superman(String superAbilities, Weapon weapon) {
-        super("Superman",400);
+    public Superman(String superAbilities, Weapon weapon,String SuperHeroesName,int speed ) {
+        super(SuperHeroesName,speed);
         SuperAbilities = superAbilities;
         this.weapon = weapon;
     }
@@ -46,9 +46,8 @@ public class Superman extends DCWorld {
 
 
     public String  getInfo() {
-
-        return "Info " + weapon + SuperAbilities + vulnerability;
-
+       // System.out.println(getInfo());
+        return "Info "+" "+super.getSuperHeroesName()+" "+super.getSpeed()+" " + weapon+" " + SuperAbilities + " "+ vulnerability+" "+been.getPlanets();
     }
 
 
